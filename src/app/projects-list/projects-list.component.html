@@ -1,0 +1,10 @@
+<div class="container">
+    <div class="row">
+        <div *ngFor="let project of projects" class="col-md-4">
+            <p>Nom du projet: <span>{{ project.name }}</span></p>
+            <p>Créé le: <span>{{ project.startDate | date }}</span></p>
+            <p>Description: <span>{{ project.description }}</span></p>
+            <p>Statut: <span>{{ project.status }}</span></p>
+        </div>
+    </div>
+</div>
